@@ -1,0 +1,53 @@
+/* Mobiles */
+@media screen and (max-width: 767px) {
+  .wp-block-image {
+    text-align: center!important
+  }
+
+  /*.wp-block-image > img {
+    max-width: 450px!important;
+}*/
+
+  header {
+      #motto {
+          display: none!important
+      }
+
+      .colorstrip {
+          text-align: center
+      }
+  }
+
+}
+
+/* Desktops */
+
+/* Margin for Foundation Grid */
+
+.grid-x, .grid-y {
+    margin: 10px;
+    margin-right: auto;
+    margin-left: auto
+}
+
+@media screen and (max-width: 1200px) {
+  header .desktopnav {
+      height: 54px!important;
+      .menu-radford-container>ul>li>a {
+          padding: 15px
+      }
+      .search {
+          height: 54px!important;
+          width: 54px!important;
+      }
+  }
+}
+
+
+@include breakpoint(large down) {
+  .cell.sidemenu {
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid $college-color-muted-grey
+  }
+}

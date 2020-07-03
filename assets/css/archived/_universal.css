@@ -1,0 +1,388 @@
+@import url("https://use.typekit.net/dwe8vmu.css");
+
+
+/*
+**********
+  HEADER
+**********
+*/
+body {
+  margin:0px;
+  background-color: #d6d2d2;
+}
+
+html {
+  height: 100%!important;
+  background-color: #444444;
+  content: ""
+}
+
+.container-page-content {
+  max-width: 1620px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #fff;
+
+}
+
+header {
+  /*height: 100px!important;
+  max-height: 100px!important;*/
+  position: relative;
+}
+
+header .colorstrip {
+  background: #971d33;
+  background: linear-gradient(135deg, rgba(116,22,39,1) 0%, rgba(189,37,61,1) 33%, rgba(116,22,39,1) 66%, rgba(189,37,61,1) 100%);
+  height: 100px
+}
+
+header .colorstrip img {
+  padding: 10px
+}
+
+#motto {
+  position: absolute;
+  top: 0%;
+  right: 0px;
+}
+
+/*
+.bluecolorstrip {
+  background-color: #11237c;
+  height: 39px!important
+}
+
+.bluecolorstrip i {
+  padding: 10px;
+  filter: invert(100%);
+}*/
+
+
+.embeddedcontent > h1 {
+  display: block;
+  margin-top: 21.44px
+}
+
+
+
+
+.mobilenavbar, .mobilenav {
+  display: none;
+
+}
+
+.mobilenavbar {
+  background-color: #11237c
+}
+
+.mobilenav {
+  background: #971d33;
+  background: linear-gradient(135deg, rgba(116,22,39,1) 0%, rgba(189,37,61,1) 33%, rgba(116,22,39,1) 66%, rgba(189,37,61,1) 100%);
+}
+
+.mobilenavbar button {
+  color: #fff;
+  background-color: transparent;
+  border: none;
+  height: 40px;
+  padding-left: 10px
+}
+
+@media screen and (min-width: 768px) {
+ #footerimg {
+  width: 100%!important;
+  height: 5px!important;
+}
+
+.footer {
+  position: relative;
+  background-color: #444;
+  margin-top: 0px!important;
+  height: 180px
+}
+
+.footer > .crest {
+  position: absolute;
+  top: 45px;
+  left: 50px;
+  height: 100px;
+}
+
+.socials {
+  position: relative;
+  width: 60px;
+  padding: 5px;
+  filter: invert(100%);
+  left: 350px;
+  top: 30px;
+  transition: 0.2s ease-in-out;
+
+
+}
+
+.socials:hover {
+  transform: translate(0px, -5px);
+  transition: 0.2s ease-in-out;
+}
+
+.footermotto {
+  position: absolute;
+  text-align: right;
+  color: white;
+  font-family: Cambria;
+  font-size: xx-large;
+  right: 40px;
+  top: 35px
+
+
+}
+
+.footermotto img {
+  position: absolute;
+  height: 150px;
+  top: 10px;
+  right: 40px
+}
+
+.footer hr {
+  border: 3px solid transparent;
+  border-image: url(/wp-content/themes/radford2020/assets/img/Gold-Gradient.png) 30 repeat
+
+} 
+.crest::after {
+    display: block;
+    content: ""
+  }
+}
+.footer hr {
+  border: 3px solid transparent;
+  border-image: url(/wp-content/themes/radford2020/assets/img/Gold-Gradient.png) 30 repeat
+
+} 
+
+@media screen and (max-width: 767px) {
+  .desktopnav {
+    display: none!important
+  }
+
+  .mobilenavbar {
+    display: block!important;
+  }
+  
+  #motto {
+    display: none
+  }
+
+  .colorstrip {
+    text-align: center!important
+  }
+
+  .footer {
+    position: relative;
+    background-color: #444;
+    margin-top: 0px!important;
+    text-align: center!important
+  }
+
+  .footer > .crest {
+    top: 45px;
+    height: 110px;
+    padding: 10px
+  }
+
+  .socials {
+    width: 50px;
+    filter: invert(100%);
+    padding: 5px
+
+  }
+
+  .footermotto {
+      padding: 20px;
+      font-size: x-large;
+      color: #fff;
+      font-family: Georgia
+  }
+
+  .wp-block-image {
+    text-align: center!important
+  }
+
+  .wp-block-image > img {
+    max-width: 450px!important;
+  }
+}
+
+.mobilenav {
+  display: none;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+  z-index: 50;
+  animation: slide 0.5s forwards;
+  animation-delay: 2s;
+}
+.mobilenav ul {
+  list-style-type: none;
+}
+
+.mobilenav li {
+  padding-bottom: 10px;
+  padding-left: 10px
+}
+
+.mobilenav a {
+  color: #fff;
+  font-family: Georgia;
+  text-decoration: none;
+  font-size: 22px
+}
+
+.mobilenav .sub-menu {
+  display: none!important;
+}
+
+.mobilenav h1 {
+  color: #fff;
+  padding-left: 20px
+}
+
+.mobilenav #closenav {
+  position: fixed;
+  right: 20px;
+  top: 20px;
+  border: none;
+  background-color: transparent
+}
+
+.mobilenav #closenav i {
+  color: #fff
+}
+
+.mobilenav .menu-item-has-children:hover .sub-menu {
+  display: block!important;
+  animation: slide 0.5s forwards;
+}
+
+.mobilenav .menu-item-has-children > a::before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f107";
+  padding-right: 10px
+}
+
+.mobilenav .menu-item-has-children .menu-item-has-children {
+  margin: 0;
+  padding-top: 10px
+}
+
+
+
+article {
+   background-color: lightgrey;
+   width: auto!important;
+   color: #000;
+   font-family: cambria;
+   text-decoration: none;
+   margin-top: 15px;
+   margin-bottom: 15px;
+   height: 200px!important;
+   box-shadow: 5px 5px 10px #b9b9b9;
+
+
+}
+
+article img {
+  height: 200px;
+  width: 40%;
+  object-fit: cover
+}
+
+article .entry-title {
+  font-size: 30px;
+  width: 60%;
+  float: left;
+  margin: 0;
+  padding: 20px;
+  padding-bottom: 0px;
+  height: 200px;
+  overflow: hidden!important
+}
+
+article .entry-desc {
+  font-size: 16px;
+  font-family: Roboto
+
+}
+
+article a {
+  color: #000;
+  text-decoration: none
+}
+
+article a:hover {
+  text-decoration: underline!important
+}
+
+article:nth-child(even) img {
+  float: left!important
+}
+
+#bulletin_header {
+  background-color: #beb7a5;
+  color: #fff;
+  padding-top: 10px;
+     box-shadow: 5px 5px 10px #b9b9b9;
+
+}
+
+.article_post_thumb img {
+  width: 50%;
+  height: auto
+}
+
+.bluecolorstrip {
+  position: sticky!important;
+  top: 0px
+}
+
+h2.titleribbon {
+  background-color: #971d33;
+  color: #fff;
+  padding: 10px;
+  font-size: 28px;
+     box-shadow: 5px 5px 10px #b9b9b9;
+}
+
+.tax-bulletin .container {
+  padding-top: 10px;
+}
+
+.breadcrumbs {
+    background-color: #c7c0a5;
+    padding: 15px;
+    color: #fff!important;
+    font-family: Roboto;
+
+}
+
+.breadcrumbs a {
+    color: #fff!important;
+    text-decoration: none
+}
+
+.breadcrumbs a:hover {
+    text-decoration: underline!important
+}
+
+.breadcrumbs .breadcrumbs-youarehere {
+    font-weight: bold
+}
+
+
+.sidemenu {
+	min-width: 280px!important	
+}

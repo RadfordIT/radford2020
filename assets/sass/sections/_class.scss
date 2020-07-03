@@ -1,0 +1,48 @@
+/* Background Colors */
+.rad-background-color-maroon {
+	background-color: $college-color-maroon;
+}
+
+.rad-background-color-gold {
+	background-color: $college-color-gold;
+}
+
+.rad-background-color-navy {
+	background-color: $college-color-navy
+}
+
+
+
+$rad-icons:
+	"person" "\f100",
+	"megaphone" "\f101",
+	"calendar" "\f102",
+	"paperclip" "\f103",
+	"news" "\f104",
+	"school" "\f105",
+	"door" "\f106",
+	"info" "\f107",
+	"community" "\f108",
+	"search" "\f109",
+	"hamburger" "\f10a",
+	"chevron" "\f10b",
+	"twitter" "\f10c";
+
+
+
+@each $name, $icon in $rad-icons {
+	.rad-icon-#{$name} {
+		&::before {
+			content: $icon;
+			@include iconfont;
+		}
+	}
+
+	.rad-icon-a-#{$name} {
+		> a::before {
+			content: $icon;
+			@include iconfont;
+		}
+	}
+}
+//fc2

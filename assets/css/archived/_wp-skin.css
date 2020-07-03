@@ -1,0 +1,153 @@
+/* NO LONGER USED/UPDATED (kinda) - USE INLINE CSS OR UNIVERSAL - MOVING TO SASS SOON (if i can be bothered) */
+
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+.wp-block-image {
+  margin: 0px
+}
+
+h1, h2, h3, h4 {
+  font-family: 'utopia-std';
+  font-weight: lighter
+}
+
+.embeddedcontent {
+  font-family: Roboto;
+  /*width: 70%;
+  float: left*/;
+  /*margin: 15px everything now has columns */
+}
+
+p:last-child {
+  margin-bottom: 0px!important
+}
+
+figcaption {
+  font-style: italic;
+  font-weight: lighter
+
+}
+
+.sidebarnav {
+  width: 30%;
+  float: left
+}
+
+.container-page-content, .embeddedcontent {
+  height: 100%
+}
+
+
+
+.desktopnav .menu-radford-container ul {
+  list-style-type:none;
+	background-color: #11237c;
+	margin:0px;
+	padding: 0px;
+	overflow: hidden;
+
+}
+
+.desktopnav .menu-radford-container ul li {
+  float: left;
+	transition: 0.2s ease-in-out;
+}
+
+
+
+.desktopnav .menu-radford-container ul li:hover {
+  /*background-color: #fff;
+  color: #971d33*/
+}
+
+.desktopnav .menu-radford-container ul li a {
+  /*text-transform: uppercase;
+	color: #fff;
+	text-decoration:none;
+	display: block;
+	font-family: Cambria;
+	font-size: 17.5px;*/
+  display: block;
+  padding: 20px;
+  color: #fff;
+  font-size: 17.5px;
+  text-decoration: none;
+  font-family: Cambria;
+  text-transform: uppercase;
+  transition: 0.2s ease-in-out
+
+}
+
+.desktopnav .menu-radford-container ul li a:hover {
+  color: #971d33;
+  background-color: #fff
+}
+
+.desktopnav .menu-item-has-children >  a::after {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f107";
+  padding-left: 10px
+}
+
+.desktopnav .rol-link {
+	float: right!important;
+}
+
+.desktopnav .rol-link a {
+  text-transform: none!important
+}
+
+.rol-link a::before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f007";
+  padding: 10px
+}
+
+.desktopnav .sub-menu {
+  display: none;
+  float: left;
+  overflow: hidden;
+  position: absolute;
+  left: 0;
+  background-color: #1a38c9!important;
+  width: 100%
+}
+
+.desktopnav .sub-menu li a {
+  text-transform: none!important
+}
+
+.desktopnav .menu-item-has-children:hover .sub-menu {
+  display: block!important;
+  transition: 0.2s ease-in-out
+
+
+}
+
+.desktopnav .menu-item-has-children .sub-menu {
+  transition: 0.2s ease-in-out
+}
+
+.desktopnav .menu-item.current-page-parent {
+  background-color: #0d1b63
+}
+
+.desktopnav .sub-menu .current-menu-item {
+  background-color: #1f3ed1
+}
+
+.desktopnav .current-menu-item {
+  background-color: #0d1b63
+}
+
+.nonstatic a {
+	color: #000;
+	text-decoration: none
+}
+
+.nonstatic a:hover {
+	text-decoration: underline!important;
+	/*color: #971d33*/
+}

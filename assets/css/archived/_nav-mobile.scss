@@ -1,0 +1,80 @@
+header {
+	.mobilenav {
+		display: none;
+	}
+
+	.mobilenav {
+		background: $college-color-navy;
+
+		display: none;
+	    position: fixed;
+	    top: 0px;
+	    left: 0px;
+	    height: 100%;
+	    width: 100%;
+	    z-index: 50;
+	    animation: slide 0.5s forwards;
+	    animation-delay: 2s;
+
+		ul {
+			list-style-type: none;
+			.menu-item-has-children {
+				margin: 0;
+				padding-top: 10px;
+				&:hover {
+					.sub-menu {
+						display: block!important;
+						animation: slide 0.5s forwards;
+					}
+				}
+				> a{
+					&::before {
+						font-family: "Font Awesome 5 Free";
+						font-weight: 900;
+						content: "\f107";
+						padding-right: 10px
+					}
+				}
+			}
+			li {
+				padding-bottom: 10px;
+			    padding-left: 10px;
+				a {
+					color: #fff;
+				    font-family: $college-font-headers;
+				    text-decoration: none;
+				    font-size: 22px
+				}
+				.sub-menu {
+					display: none!important;
+				}
+			}
+
+		}
+		h1 {
+			color: #fff;
+			padding-left: 20px;
+		}
+		#closenav {
+		  position: fixed;
+		  right: 20px;
+		  top: 20px;
+		  border: none;
+		  background-color: transparent;
+		  i {
+			  color: #fff
+		  }
+		}
+	}
+
+	.mobilenavbar {
+		background-color: $college-color-navy;
+		button {
+			color: #fff;
+		    background-color: transparent;
+		    border: none;
+		    height: 40px;
+		    padding-left: 10px
+		}
+	}
+}

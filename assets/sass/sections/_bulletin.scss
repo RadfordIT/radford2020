@@ -1,0 +1,108 @@
+.tax-bulletin, .home-articles {
+	article {
+		background-color: lightgrey;
+   		width: auto!important;
+   		color: #000;
+   		font-family: $college-font-headers;
+   		text-decoration: none;
+   		margin-top: 15px;
+   		margin-bottom: 15px;
+   		height: 200px;
+   		@include glasstile;
+		transition: 0.2s ease-in-out;
+		img {
+			height: 200px;
+  			width: 40%;
+  			object-fit: cover
+		}
+		.entry-title {
+			font-size: 30px;
+			width: 60%;
+			float: left;
+			margin: 0;
+			padding: 20px;
+			padding-bottom: 0px;
+			height: 200px;
+			overflow: hidden!important
+		}
+		.entry-desc {
+			font-size: 18px;
+			font-family: $college-font-paras;
+		}
+		a {
+			color: #000;
+			text-decoration: none;
+			&:hover {
+				text-decoration: underline!important
+			}
+		}
+		&:nth-child(even) img {
+			float: left!important
+		}
+		&:hover {
+			transform: translateY(-5px);
+			transition: 0.2s ease-in-out
+		}
+		@include breakpoint (medium down) {
+				height: 400px;
+				img {width: 100%};
+				.entry-title{width: 100%}
+		}
+	}
+	.bulletin-header {
+		background-color: $college-color-muted-gold;
+		color: #fff;
+		padding-top: 10px;
+   		@include glasstile;
+	}
+	.titleribbon {
+		background-color: $college-color-maroon;
+		color: #fff;
+		padding: 10px;
+		font-size: 28px;
+		@include glasstile;
+	}
+	.announcements-pane {
+		a {
+			text-decoration: none!important
+		}
+		.announcement {
+			@include glasstile;
+			display: block;
+			margin-top: 15px;
+			margin-bottom: 15px;
+			transition: 0.2s ease-in-out;
+			.announcement-body {
+				padding: 10px;
+				.announcement_title {
+					font-family: $college-font-headers;
+					color: #fff;
+					font-size: 26px;
+					margin: 0px;
+				}
+				.announcement_desc {
+					font-family: $college-font-paras;
+					color: #fff;
+				}
+			}
+			&::before {
+				float: right;
+				padding: 12px;
+				display: block;
+				width: 100%;
+				color: #fff;
+				font-size: 22px;
+				background: rgba(0, 0, 0, 0.25);
+				margin-bottom: 10px;
+				font-family: "Font Awesome 5 Free", $college-font-headers;
+				font-weight: 900;
+
+
+			}
+			&:hover {
+				transform: translateY(-5px);
+				transition: 0.2s ease-in-out
+			}
+		}
+	}
+}

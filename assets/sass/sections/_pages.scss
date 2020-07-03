@@ -1,0 +1,27 @@
+.embeddedcontent {
+	a {
+		color: $college-color-maroon;
+		&:hover {
+			filter: brightness(65%)
+		}
+	}
+	/*figure {
+		text-align: center;
+		background-color: $college-color-muted-grey;
+		@include glasstile;
+		img {
+			margin: 10px;
+			width: auto
+		}
+		figcaption {
+			margin: 0px;
+			padding-bottom: 10px;
+			font-weight: lighter!important
+		}
+	}*/
+}
+
+/* Specific Pages */
+@import '../pages/homepage';
+@import '../pages/bulletin-archive';
+@import '../pages/search';

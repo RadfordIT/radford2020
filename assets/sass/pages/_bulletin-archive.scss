@@ -1,0 +1,23 @@
+#bulletin-archive {
+	.embeddedcontent {
+		> ul {
+			padding-left: 5px;
+			list-style: none;
+			> li {
+				> a {
+   					color: #000 !important;
+     				font-family: $college-font-headers;
+     				font-size: 30px;
+     				text-decoration: none;
+     				pointer-events: none;
+   				}
+			}
+			ul {
+				list-style: none;
+				padding: 12px
+			}
+		}
+	}
+}
+
+//fcccc

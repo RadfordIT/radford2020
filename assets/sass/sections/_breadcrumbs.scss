@@ -1,0 +1,27 @@
+.breadcrumbs {
+	background-color: $college-color-muted-gold;
+    color: #fff!important;
+	padding: 15px;
+    font-family: $college-font-paras;
+	a {
+		color: #fff!important;
+		text-decoration: none;
+		&:hover {
+			text-decoration: underline!important
+		}
+
+	}
+	.breadcrumbs-youarehere {
+		font-weight: bolder
+	}
+	.bc-seperator {
+		padding-left: 10px;
+		padding-right: 10px;
+		filter: brightness(0.85);
+	}
+	img {
+		height: 16px;
+		width: 16px;
+		filter: invert(1);
+	}
+}

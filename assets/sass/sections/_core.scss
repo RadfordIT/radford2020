@@ -1,0 +1,76 @@
+body {
+	margin: 0px;
+	background: $college-color-muted-grey;
+	// defined in head section of sass file
+}
+
+
+html {
+	height: 100%;
+	background-color: $college-color-darkgrey;
+}
+
+.container-page-content {
+	max-width: 1620px;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #fff;
+}
+
+.wp-block-image img {
+  margin: 0px;
+  height: auto!important
+}
+
+h1, h2, h3 {
+  font-family: $college-font-headers;
+  font-weight: lighter
+}
+
+h2 {
+	border-bottom: 1px solid lightgrey;
+	padding-bottom: 10px
+}
+
+.embeddedcontent {
+  font-family: $college-font-paras;
+  /*width: 70%;
+  float: left*/;
+  /*margin: 15px everything now has columns */
+}
+
+p:last-child {
+  margin-bottom: 0px
+}
+
+figcaption {
+  font-style: italic;
+  font-weight: lighter
+}
+
+*, *:before, *:after {
+	box-sizing: border-box
+}
+
+.hidden {
+	display: none;
+	visibility: hidden;
+	opacity: 0
+}
+
+.grid-x {
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 0;
+	margin-bottom: 0;
+	max-width: 86.875em;
+	width: 100%;
+}
+
+.nonstatic {
+	justify-content: center
+}
+
+.metaslider {
+	@include glasstile
+}

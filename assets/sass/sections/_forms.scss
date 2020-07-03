@@ -1,0 +1,29 @@
+form {
+	input {
+		&[type=text], &[type=password] {
+			border: 1px solid $college-color-muted-grey;
+			height: 40px
+		}
+		&[type=submit] {
+			background-color: $college-color-maroon;
+			border: none;
+			color: #fff;
+			padding: 10px;
+			@include hovercolor;
+		}
+	}
+	label {
+		font-weight: 100;
+		font-size: 17.5px
+	}
+}
+
+.tml-action {
+	.sidemenu {
+		display: none
+	}
+	input[type=text], input[type=password] {
+		width: 400px!important;
+		max-width: 100%
+	}
+}

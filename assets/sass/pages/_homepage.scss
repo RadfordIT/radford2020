@@ -1,0 +1,112 @@
+.home {
+	.block-header {
+		display: flex;
+		align-items: center;
+		background-color: $college-color-maroon;
+		color: #fff;
+		font-size: 24px;
+		margin-top: 6px;
+		* {
+			padding: 20px;
+			display: flex;
+			margin: 0
+		}
+		h2 {
+			border-bottom: none;
+			&::before {
+				height: 40px;
+				width: 40px;
+				font-size: 34px;
+			}
+		}
+	}
+	.home-quicklinks {
+		list-style-type: none;
+		display: flex;
+    	flex-wrap: wrap;
+    	flex-direction: row;
+		li {
+			display: flex;
+    		width: 100%;
+    		flex: calc(50% - 6px);
+    		margin: 6px 3px 0;
+			background-color: $college-color-muted-grey;
+			border: 1px solid $college-color-muted-grey;
+			a {
+				display: flex;
+				padding: 17.5px;
+				color: $college-color-darkgrey;
+				width: 100%;
+				height: 100%;
+				font-size: 18px;
+				font-family: $college-font-paras;
+				text-transform: uppercase;
+				text-decoration: none;
+				align-items: center;
+				font-weight: 300
+			}
+			&:hover {
+				background-color: #fff;
+				border: 1px solid black;
+				transition: 0.1s ease-in-out
+			}
+			transition: 0.1s ease-in-out
+		}
+	}
+}
+
+.vid-hero {
+	height: 600px;
+	position: relative;
+	&, video {
+		@include breakpoint (large up) {
+			max-height: calc(100vh - 164px);
+		}
+		@include breakpoint (medium down) {
+			max-height: calc(100vh - 151px);
+		}
+	}
+	.hero-video {
+		position: absolute;
+    	bottom: 0;
+    	top: 0;
+    	right: 0;
+    	left: 0;
+		video {
+			width: 100%;
+			position: relative;
+			object-fit: cover;
+			object-position: top;
+			height: 600px
+		}
+	}
+	.hero-para {
+		position: absolute;
+	    bottom: 0;
+	    transform: translateY(-5%);
+	    margin: 0;
+		width:100%;
+		h1 {
+			color: #fff;
+			font-size: 65px;
+			margin: 0;
+			background-image: linear-gradient( rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.9) );
+			padding: 30px;
+			position: absolute;
+			bottom: 0px;
+			width: 100%
+
+		}
+	}
+	.breadcrumbs {display: none}
+}
+
+.tweets {
+	font-family: $college-font-paras;
+	border: 5px solid $college-color-muted-grey;
+	margin-top: 6px;
+
+	& * {
+		padding: 5px
+	}
+}

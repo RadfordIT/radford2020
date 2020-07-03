@@ -1,0 +1,41 @@
+.sidemenu {
+	a {
+		display: block;
+		color: #000;
+		text-decoration: none;
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+	.pagenav {
+		padding-top: 10px;
+		font-family: $college-font-headers;
+		list-style-type: none;
+		> a {
+			font-size: 28px
+		}
+		> ul {
+			list-style-type: none;
+			padding: 10px;
+			> li {
+				padding-bottom: 12px;
+				padding-top: 12px;
+				border-bottom: 1px solid $college-color-muted-grey;
+				> a {
+					font-size: 22px
+				}
+				.children {
+					padding-left: 0px;
+					list-style-type: none;
+					> li {
+						padding-bottom: 4px;
+						padding-top: 12px;
+					}
+				}
+			}
+			.current_page_item > a {
+				color: $college-color-muted-gold!important
+			}
+		}
+	}
+}

@@ -1,0 +1,22 @@
+header {
+	/*position: relative;
+	z-index: 1*/
+	position: sticky;
+	top: 0px;
+	z-index: 99999;
+	@include glasstile;
+	.colorstrip {
+		background: $college-color-maroon;
+		background: $college-gradient-maroon;
+		height: 100px;
+		img {
+			height: 100px;
+			padding: 10px
+		}
+	}
+	#motto {
+		position: absolute;
+	    top: 0%;
+	    right: 0px;
+	}
+}

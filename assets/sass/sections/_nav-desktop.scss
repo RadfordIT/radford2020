@@ -1,0 +1,116 @@
+header {
+	.desktopnav {
+		height: 64px;
+    	background-color: #11237c;
+		.menu-radford-container {
+			position: absolute;
+			height: 64px;
+			> ul {
+				list-style-type:none;
+			  	background-color: $college-color-navy;
+			  	margin:0px;
+			  	padding: 0px;
+			  	overflow: hidden;
+				> li {
+					float: left;
+					transition: 0.2s ease-in-out;
+					> a {
+						display: block;
+					    padding: 16px;
+					    color: #fff;
+					    font-size: 17.5px;
+					    text-decoration: none;
+					    font-family: $college-font-headers;
+					    text-transform: uppercase;
+						transition: 0.2s ease-in-out;
+						display: flex;
+						align-items: center;
+						justify-content: center;
+						&::before {
+							padding-right: 10px;
+							font-size: 32px
+						}
+					}
+					> a:hover, &.open > a{
+						color: $college-color-maroon;
+						background-color: #fff;
+					}
+				}
+				.rol-link {
+					float: right;
+					a {
+						text-transform: none;
+					}
+				}
+				.menu-item-has-children {
+					> a::after {
+						@include iconfont;
+						content: '\f10b';
+						padding-left: 15px;
+					}
+					.sub-menu {
+						list-style-type: none;
+						display: none;
+					    overflow: hidden;
+					    position: absolute;
+					    background-color: $college-color-lighter-navy!important;
+						font-family: $college-font-paras;
+						padding-left: 0px;
+						@include glasstile;
+						a {
+							text-transform: none!important;
+							text-decoration: none;
+							color: #fff;
+							width: 100%!important;
+							display: block;
+							padding: 10px
+						}
+						li {
+							position: relative;
+							width: 100%;
+							&:hover {
+								background-color: #fff;
+								a {
+									color: $college-color-maroon
+								}
+							}
+						}
+						> .sub-menu {
+							display: none
+						}
+					}
+					/*&:hover, &:focus {
+						> .sub-menu {
+							display: block!important;
+							transition: 0.2s ease-in-out;
+						}
+					}*/
+				}
+			}
+		}
+		button.search {
+			position: absolute;
+			background-color: $college-color-maroon;
+			right: 0px;
+			border: none;
+			color: #fff;
+			/*padding: 19px 19px;*/
+			height: 64px;
+			width: 64px;
+			}
+		}
+		button.hamburger {
+			background-color: $college-color-navy;
+			border: none;
+			color: #fff;
+			height: 64px;
+			width: 64px;
+			position: absolute
+		}
+		input#search {
+			height: 64px;
+			font-family: $college-font-paras;
+			font-size: 24px;
+			padding-left: 74px
+		}
+	}

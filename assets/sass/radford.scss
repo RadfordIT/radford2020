@@ -1,0 +1,109 @@
+/*!Amphersand  Test auto-compile as a service (ACAAS) */
+/*!
+---------------------------------------------------
+Radford WordPress Theme | Developed by Will Pak Poy
+---------------------------------------------------
+*/
+
+
+
+$version: "1.0.0";
+@import 'external';
+@import 'variables';
+
+/********************/
+/*       CORE       */
+/********************/
+
+
+@import 'sections/core';
+
+/********************/
+/*      HEADER      */
+/********************/
+
+@import 'sections/header';
+
+/********************/
+/*   NAV (DESKTOP)  */
+/********************/
+
+@import 'sections/nav-desktop';
+
+/********************/
+/*   NAV (MOBILE)   */
+/********************/
+
+@import 'sections/nav-mobile';
+
+/********************/
+/*    RESPONSIVE    */
+/********************/
+
+@import 'sections/responsive';
+
+/********************/
+/*      FOOTER      */
+/********************/
+
+@import 'sections/footer';
+
+/********************/
+/*   BREADCRUMBS    */
+/********************/
+
+@import 'sections/breadcrumbs';
+
+/********************/
+/*    SIDE MENU     */
+/********************/
+
+@import 'sections/sidemenu';
+
+/********************/
+/*     BULLETIN     */
+/********************/
+
+@import 'sections/bulletin';
+
+/********************/
+/*     ARTICLES     */
+/********************
+
+@import 'sections/articles';*/
+
+/********************/
+/*     CLASSES      */
+/********************/
+
+@import 'sections/class';
+
+/********************/
+/*     HOMEPAGE     */
+/********************/
+
+@import 'sections/homepage';
+
+/********************/
+/*       PAGES      */
+/********************/
+
+@import 'sections/pages';
+
+/********************/
+/*       FORMS      */
+/********************/
+
+@import 'sections/forms';
+
+/********************/
+/*       ICONS      */
+/********************/
+
+@import 'sections/icons';
+
+/********************/
+/*       table      */
+/********************/
+
+@import 'sections/table';

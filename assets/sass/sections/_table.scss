@@ -1,0 +1,17 @@
+.embeddedcontent {
+	table {
+		border-spacing: 0px;
+		td, th {
+			background-color: $college-color-gold;
+			margin: 0px;
+			padding: 15px;
+			border-right: 1px solid $college-color-muted-gold
+		}
+		tr:nth-child(odd) td{
+			filter: brightness(1.2)
+		}
+		tr:nth-child(even) td{
+			filter: brightness(1.4)
+		}
+	}
+}

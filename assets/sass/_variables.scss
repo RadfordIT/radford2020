@@ -1,0 +1,67 @@
+///////////////
+// VARIABLES //
+///////////////
+
+// * fonts
+$college-font-headers: 'Noto Serif', sans-serif;
+$college-font-paras: 'Open Sans', sans-serif;
+
+// * colors
+$college-color-maroon: #971d33;
+$college-color-gold: #86774f;
+$college-color-navy: #11237c;
+$college-color-muted-grey: #d6d2d2;
+$college-color-lighter-grey: $college-color-muted-grey;
+$college-color-darkgrey: #444444;
+$college-color-darkgrey-alternate: #525252;
+$college-color-lighter-navy: #1a38c9;
+$college-color-muted-gold: #c7c0a5;
+// * gradient colors
+$college-gradient-maroon: linear-gradient(135deg, rgba(116,22,39,1) 0%, rgba(189,37,61,1) 33%, rgba(116,22,39,1) 66%, rgba(189,37,61,1) 100%);
+// END VARIABLES
+
+////////////
+// MIXINS //
+////////////
+
+@mixin glasstile {
+	box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+@mixin floating-zindex {
+	box-shadow: 1px 30px 35px rgba(0,0,0,0.5)
+}
+
+@mixin hoverup {
+	transition: 0.2s ease-in-out;
+		&:hover {
+			transform: translateY(-5px);
+			transition: 0.2s ease-in-out
+		}
+}
+
+@mixin faicon {
+	font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    padding-right: 10px;
+    font-size: 22px;
+}
+
+@mixin iconfont {
+	font-family: "Flaticon";
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	line-height: 1;
+	text-decoration: inherit;
+	text-rendering: optimizeLegibility;
+	text-transform: none;
+}
+
+@mixin hovercolor {
+	transition: 0.2s ease-in-out;
+	&:hover {
+		filter: brightness(1.15);
+		transition: 0.2s ease-in-out
+	}
+}

@@ -1,0 +1,11 @@
+.search {
+	ul.search {
+		list-style: none;
+		li {
+			border-bottom: 1px solid $college-color-muted-grey;
+			a {
+				text-decoration: none
+			}
+		}
+	}
+}

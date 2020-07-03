@@ -1,0 +1,73 @@
+function announcement_meta() {
+	add_meta_box( 'announcement', 'Announcement Details', 'announcement_meta_cb', 'announcement', 'normal', 'default' );
+}
+
+function announcement_meta_cb( $post) {
+	$values = get_post_custom( $post->id );
+
+	?>
+	<p>Announcement Description</p>
+	<textarea name="announcement-desc-text" id="announcement-desc-text" style="height: 150px" value="<?php echo $desc; ?>"></textarea>
+	<p>Accompanying Icon <a href="https://fontawesome.com/">(must be font-awesome, eg fa-globe)</a></p>
+	<input type="text" name="announcement-icon" id="announcement-icon"></input>
+	<p>Links To (in new tab)</p>
+	<input type="text" name="announcement-url" id="announcement-url"></input>
+
+	<?php
+
+}
+
+add_action( 'save_post', 'announcement_meta' );
+
+
+
+function announcements_make_meta_box( $meta_boxes ) {
+	global $post;
+	$prefix = 'announcements_';
+
+	$meta_boxes[] = array(
+		'id' => 'announcements_details',
+		'title' => esc_html__( 'Announcements Details', 'metabox-online-generator' ),
+		'post_types' => array('announcement' ),
+		'context' => 'normal',
+		'priority' => 'default',
+		'autosave' => 'false',
+		'fields' => array(
+			array(
+				'id' => $prefix . 'description',
+				'type' => 'textarea',
+				'name' => esc_html__( 'Description', 'metabox-online-generator' ),
+			),
+			array(
+				'id' => $prefix . 'icon',
+				'name' => esc_html__( 'Icon', 'metabox-online-generator' ),
+				'type' => 'select',
+				'placeholder' => esc_html__( 'Select an Item', 'metabox-online-generator' ),
+				'options' => array(
+					'rad-icon-person' => esc_html__( 'Person (f007)', 'metabox-online-generator' ),
+					'rad-icon-megaphone' => esc_html__( 'Megaphone (f0a1)', 'metabox-online-generator' ),
+					'rad-icon-calendar' => esc_html__( 'Calendar (f073)', 'metabox-online-generator' ),
+				),
+			),
+			array(
+				'id' => $prefix . 'color',
+				'name' => esc_html__( 'Color', 'metabox-online-generator' ),
+				'type' => 'select',
+				'placeholder' => esc_html__( 'Select an Item', 'metabox-online-generator' ),
+				'options' => array(
+					'rad-background-color-maroon' => esc_html__( 'Maroon', 'metabox-online-generator' ),
+					'rad-background-color-gold' => esc_html__( 'Gold', 'metabox-online-generator' ),
+					'rad-background-color-navy' => esc_html__( 'Navy', 'metabox-online-generator' ),
+				),
+			),
+			array(
+				'id' => $prefix . 'url',
+				'type' => 'url',
+				'name' => esc_html__( 'Link to URL', 'metabox-online-generator' ),
+			),
+		),
+	);
+
+	return $meta_boxes;
+}
+add_filter( 'rwmb_meta_boxes', 'announcements_make_meta_box' );
