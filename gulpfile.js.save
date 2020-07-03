@@ -1,2 +1,0 @@
-var sass = require('gulp-sass');
-var gulp = require('gulp');
